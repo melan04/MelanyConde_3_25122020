@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,6 +6,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
@@ -346,6 +349,11 @@ body, html {
   display: flex;
   flex-direction: column;
   margin: auto;
+  width: 400px;
+  /*à enlever*/
+}
+body a:link, html a:link {
+  text-decoration: none;
 }
 
 header {
@@ -368,6 +376,9 @@ footer .headerlogo {
   margin: 0;
   font-size: 3rem;
   font-size: 1rem;
+}
+footer ul {
+  list-style: none;
 }
 
 body, html {
@@ -375,6 +386,11 @@ body, html {
   display: flex;
   flex-direction: column;
   margin: auto;
+  width: 400px;
+  /*à enlever*/
+}
+body a:link, html a:link {
+  text-decoration: none;
 }
 
 header {
@@ -397,6 +413,62 @@ footer .headerlogo {
   margin: 0;
   font-size: 3rem;
   font-size: 1rem;
+}
+footer ul {
+  list-style: none;
+}
+
+.restaurants_card {
+  width: 350px;
+}
+
+.restaurants_card_img {
+  width: 100%;
+  object-fit: cover;
+}
+
+body, html {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 400px;
+  /*à enlever*/
+}
+body a:link, html a:link {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px 10px black;
+}
+header .headerlogo {
+  font-family: "Shrikhand", "cursive";
+  margin: 0;
+  font-size: 3rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+footer .headerlogo {
+  font-family: "Shrikhand", "cursive";
+  margin: 0;
+  font-size: 3rem;
+  font-size: 1rem;
+}
+footer ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=main.css.map */
