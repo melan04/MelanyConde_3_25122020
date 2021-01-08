@@ -1,0 +1,48 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+$breakpoints: (
+  mobile: 600px,
+  tablette: 900px,
+  desktop: 1200px,
+);
+
+@mixin flexbox ($justify){
+    display: flex;
+    justify-content: $justify;
+    }
+
+@mixin logo {
+        font-family: "Shrikhand", "cursive";
+        margin: 0;
+        font-size: 3rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+header {
+    @include flexbox (center);
+    box-shadow: 1px 1px 10px black;
+    .headerlogo {
+        @include logo;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    .headerlogo {
+        @include logo;
+        font-size: 1rem;
+    
+}
+}

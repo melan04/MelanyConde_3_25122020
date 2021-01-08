@@ -4,7 +4,7 @@
   "description": "Projet Ohmyfood!",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/style.scss:./css/style.css"
+    "sass": "sass --watch sass/main.scss:css/main.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/melan04/MelanyConde_3_25122020/issues"
   },
-  "homepage": "https://github.com/melan04/MelanyConde_3_25122020#readme"
+  "homepage": "https://github.com/melan04/MelanyConde_3_25122020#readme",
+  "dependencies": {
+    "normalize": "^0.3.1",
+    "normalize.css": "^8.0.1"
+  }
 }
