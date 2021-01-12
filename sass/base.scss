@@ -1,6 +1,7 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$grey : #f6f6f6;
 
 $breakpoints: (
   mobile: 600px,
@@ -8,15 +9,26 @@ $breakpoints: (
   desktop: 1200px,
 );
 
-@mixin flexbox ($justify){
-    display: flex;
-    justify-content: $justify;
-    }
+@mixin box-shadow {
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
 
 @mixin logo {
         font-family: "Shrikhand", "cursive";
-        margin: 0;
-        font-size: 3rem;
+        font-size: 2rem;
+        padding: 15px;
+}
+
+@mixin button {
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: white;
+    background-color: rgb(104, 104, 104);
+    cursor: pointer;
+    @include box-shadow;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -26,31 +38,64 @@ body, html {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width : 400px;/*à enlever*/
-    a:link {
+    
+    h1 {
+    font-size: 1.4em;
+    }
+
+    h2 {
+    font-size: 1.4em;
+    margin: 0px 0px 25px 0px;
+    }
+
+    p {
+        font-size: 0.8em; 
+        margin: 0px;
+    }
+   
+    a {
         text-decoration: none;
+        &:visited {
+         color: inherit; }
+    }
 }
-}
+
+/*HEADER*/
 
 header {
-    @include flexbox (center);
-    box-shadow: 1px 1px 10px black;
-    .headerlogo {
+    box-shadow: 0px 2px 10px 3px rgba($color: #d5d5d5, $alpha: 1);
+    .logo {
         @include logo;
     }
 }
+
+/* FOOTER */
+
 
 footer {
-    background-color: black;
+    background-color: #353535;
     color: white;
-
-    .headerlogo {
+    padding: 15px ;
+   
+    .logo {
         @include logo;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding: 0px 0px 20px 0px;
     }
-    
+
+    & a {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        & i {
+            height: 10px;
+            width: 10px;
+            margin: 0px 20px 0px 0px;
+        }
+}
     ul {
     list-style: none;
+    padding: 0px;
     }
 }
+
