@@ -356,11 +356,13 @@ body h2, html h2 {
   margin: 0px 0px 25px 0px;
 }
 body p, html p {
-  font-size: 0.8em;
+  font-size: 14px;
   margin: 0px;
 }
 body a, html a {
   text-decoration: none;
+  color: white;
+  cursor: grab;
 }
 body a:visited, html a:visited {
   color: inherit;
@@ -368,11 +370,12 @@ body a:visited, html a:visited {
 
 /*HEADER*/
 header {
+  text-align: center;
   box-shadow: 0px 2px 10px 3px #d5d5d5;
 }
 header .logo {
   font-family: "Shrikhand", "cursive";
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 15px;
 }
 
@@ -380,13 +383,13 @@ header .logo {
 footer {
   background-color: #353535;
   color: white;
-  padding: 15px;
+  padding: 20px;
 }
 footer .logo {
   font-family: "Shrikhand", "cursive";
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 15px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0px 0px 20px 0px;
 }
 footer a {
@@ -417,11 +420,13 @@ body h2, html h2 {
   margin: 0px 0px 25px 0px;
 }
 body p, html p {
-  font-size: 0.8em;
+  font-size: 14px;
   margin: 0px;
 }
 body a, html a {
   text-decoration: none;
+  color: white;
+  cursor: grab;
 }
 body a:visited, html a:visited {
   color: inherit;
@@ -429,11 +434,12 @@ body a:visited, html a:visited {
 
 /*HEADER*/
 header {
+  text-align: center;
   box-shadow: 0px 2px 10px 3px #d5d5d5;
 }
 header .logo {
   font-family: "Shrikhand", "cursive";
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 15px;
 }
 
@@ -441,13 +447,13 @@ header .logo {
 footer {
   background-color: #353535;
   color: white;
-  padding: 15px;
+  padding: 20px;
 }
 footer .logo {
   font-family: "Shrikhand", "cursive";
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 15px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0px 0px 20px 0px;
 }
 footer a {
@@ -489,20 +495,23 @@ footer ul {
   font-size: 1rem;
   margin: 30px 0px;
 }
+
 .search .btn {
   border: 0;
-  padding: 0.75rem 1.5rem;
+  height: 50px;
+  width: 200px;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   border-radius: 100px;
+  align-items: center;
   color: white;
-  background-color: #686868;
+  background: linear-gradient(#FF79DA, #9356DC);
   cursor: pointer;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
 .function {
-  padding: 50px 15px;
+  padding: 50px 20px;
 }
 .function .box {
   display: flex;
@@ -516,7 +525,7 @@ footer ul {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .function .box__icon {
-  margin: 0px 10px 0px 0px;
+  margin: 0px 20px 0px 20px;
 }
 .function .box__number {
   display: flex;
@@ -534,9 +543,10 @@ footer ul {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
-  padding: 50px 15px;
+  padding: 50px 20px;
 }
 .restaurants .card {
+  position: relative;
   margin: 0px 0px 20px 0px;
   height: 250px;
   border-radius: 15px;
@@ -549,10 +559,28 @@ footer ul {
   border-radius: 15px 15px 0px 0px;
 }
 .restaurants .card__text {
-  margin: 10px;
+  position: relative;
+  margin: 15px 0px 0px 10px;
 }
 .restaurants .card__text p {
   margin: 5px 0px;
+}
+.restaurants .card__text i {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 30px;
+  top: 5px;
+}
+.restaurants .card__tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px;
+  font-size: 15px;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  background-color: #99E2D0;
+  color: #064909;
 }
 
 body, html {
@@ -568,11 +596,13 @@ body h2, html h2 {
   margin: 0px 0px 25px 0px;
 }
 body p, html p {
-  font-size: 0.8em;
+  font-size: 14px;
   margin: 0px;
 }
 body a, html a {
   text-decoration: none;
+  color: white;
+  cursor: grab;
 }
 body a:visited, html a:visited {
   color: inherit;
@@ -580,11 +610,12 @@ body a:visited, html a:visited {
 
 /*HEADER*/
 header {
+  text-align: center;
   box-shadow: 0px 2px 10px 3px #d5d5d5;
 }
 header .logo {
   font-family: "Shrikhand", "cursive";
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 15px;
 }
 
@@ -592,13 +623,13 @@ header .logo {
 footer {
   background-color: #353535;
   color: white;
-  padding: 15px;
+  padding: 20px;
 }
 footer .logo {
   font-family: "Shrikhand", "cursive";
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 15px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0px 0px 20px 0px;
 }
 footer a {
@@ -616,11 +647,94 @@ footer ul {
   padding: 0px;
 }
 
-header {
+header a {
+  position: relative;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+header a i {
+  position: absolute;
+  left: 30px;
+}
+
+.imgmenu {
+  width: 100%;
+}
+
+.menu {
+  padding: 15px 15px 50px 15px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px 25px 0px 0px;
+}
+.menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px 30px 0px;
+}
+.menu p {
+  font-family: "Shrikhand", "cursive";
+  font-size: 1.5rem;
+  padding: 15px;
+  padding: 0px;
+}
+.menu i {
+  font-size: 1.5rem;
+}
+
+.boxmenu {
+  margin: 0px 0px 30px 0px;
+}
+.boxmenu__title::after {
+  content: "";
+  margin: 5px 0px 15px 0px;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+}
+
+.foodbox {
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  margin: 10px 0px 10px 0px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+.foodbox__title {
+  margin: 5px 0px 5px 0px;
+  font-size: 17px;
+  max-width: 80%;
+}
+.foodbox .foodbox-text {
+  display: flex;
+  justify-content: space-between;
+}
+.foodbox .foodbox-text__description {
+  font-size: 14px;
+}
+.foodbox .foodbox-text__price {
+  font-weight: bold;
+  margin: 0px 10px 0px 0px;
+}
+
+button.btn__menu {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border: 0;
+  height: 50px;
+  width: 200px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-radius: 100px;
+  align-items: center;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=main.css.map */

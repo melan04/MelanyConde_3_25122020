@@ -15,18 +15,20 @@ $breakpoints: (
 
 @mixin logo {
         font-family: "Shrikhand", "cursive";
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 15px;
 }
 
 @mixin button {
     border: 0;
-    padding: 0.75rem 1.5rem;
+    height: 50px;
+    width: 200px;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     border-radius: 100px;
+    align-items: center;
     color: white;
-    background-color: rgb(104, 104, 104);
+    background: linear-gradient($color-secondary,$color-primary);
     cursor: pointer;
     @include box-shadow;
 }
@@ -49,12 +51,14 @@ body, html {
     }
 
     p {
-        font-size: 0.8em; 
+        font-size: 14px; 
         margin: 0px;
     }
    
     a {
         text-decoration: none;
+        color: white;
+        cursor: grab;
         &:visited {
          color: inherit; }
     }
@@ -63,6 +67,7 @@ body, html {
 /*HEADER*/
 
 header {
+    text-align: center;
     box-shadow: 0px 2px 10px 3px rgba($color: #d5d5d5, $alpha: 1);
     .logo {
         @include logo;
@@ -75,11 +80,11 @@ header {
 footer {
     background-color: #353535;
     color: white;
-    padding: 15px ;
+    padding: 20px ;
    
     .logo {
         @include logo;
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 0px 0px 20px 0px;
     }
 

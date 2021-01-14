@@ -24,13 +24,14 @@
         font-size : 1rem;
         margin : 30px 0px;
     }
-    .btn {
-      @include button;
-    }
+}
+
+.search .btn {
+    @include button;  
 }
 
 .function {
-    padding: 50px 15px;
+    padding: 50px 20px;
     .box {
         display: flex;
         align-items: center;
@@ -43,7 +44,7 @@
         @include box-shadow;
    
         &__icon {
-        margin: 0px 10px 0px 0px;
+        margin: 0px 20px 0px 20px;
         }
 
         &__number {
@@ -65,9 +66,10 @@
     display: flex;
     flex-direction: column;
     background-color: $grey;
-    padding: 50px 15px;
+    padding: 50px 20px;
  
     .card {   
+        position: relative;
         margin: 0px 0px 20px 0px; 
         height: 250px;
         border-radius: 15px;
@@ -81,10 +83,29 @@
         }
 
         &__text {
-            margin: 10px;
+            position: relative;
+            margin: 15px 0px 0px 10px;
             p {
                 margin: 5px 0px;
             }
+            i {
+                position: absolute;
+                font-size: 1.5rem;
+                right: 30px;
+                top: 5px;
+            }
         }
+        &__tag {
+            position: absolute;
+            top : 15px;
+            right: 15px;
+            padding: 5px;
+            font-size: 15px;
+            @include box-shadow; 
+            width:fit-content;
+            background-color: $color-tertiary;
+            color: #064909;
+        }
+        
     }
 }
