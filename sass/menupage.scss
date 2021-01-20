@@ -1,4 +1,5 @@
 @import "./base.scss";
+@import "./homepage.scss";
 
 
 header a {
@@ -22,9 +23,10 @@ header a {
     padding: 15px;
     background-color: $grey;
     display: flex;
+    transform: translateY(-40px);
     flex-direction: column;
     border-radius: 25px 25px 0px 0px;
-    transform: translateY(-50px);
+    position: relative;
     
     &__title {
         display: flex;
@@ -37,9 +39,13 @@ header a {
             padding: 0px;   
         }
         
-        i {
-            font-size: 1.5rem;
-        }   
+        .heart { 
+        &__vide {
+            top : -20px;
+            right: 30px;}
+        &__plein { 
+           top : -20px;
+           right: 30px;}}
     }
 
 .boxmenu {
@@ -56,31 +62,80 @@ header a {
 
 .foodbox {
     @include box-shadow;
+    position: relative;
+    max-width: 100%;
     margin: 10px 0px 10px 0px;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
-    /*animation: jump 2s;*/
+    transform-origin: top;
+    animation: jump 2000ms 300ms;
+    overflow: hidden;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     
+    
+   
+
+  &__animation {
+        position:absolute;
+        background-color: #99e2d0;
+        top:0;
+        left:100%;
+        width: 25%;
+        height: 100%;
+        border-radius: 0px 10px 10px 0px;
+        @include box-shadow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4em;
+        transition : transform 450ms;
+        
+        .fas.fa-check-circle {
+            color: white;
+        }
+        
+    }
+
     &__title {
         margin: 5px 0px 5px 0px;
         font-size: 17px;
         max-width: 80%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
-    
+
     .foodbox-text {
     display: flex;
     justify-content: space-between;
+    
 
     &__description {
         font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+         overflow: hidden;
     }
 
     &__price {
         font-weight: bold;
         margin: 0px 10px 0px 0px;
     }
+}  
+
+ &:hover {
+        border-radius: 10px 0px 0px 10px;
+        overflow: visible;
+        margin-right : 20%;
+
+        .fas.fa-check-circle {
+            animation : rotate 0.5s;
+        }
 }
 }
+
+
 
 button { 
     &.btn__menu {
@@ -88,5 +143,5 @@ button {
     display: flex;
     justify-content: center;
     @include button;
-}
-}
+    margin-bottom: 0px;
+}}
