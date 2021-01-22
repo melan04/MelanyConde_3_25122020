@@ -4,7 +4,8 @@
   "description": "Projet Ohmyfood!",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/main.scss:instacss/main.css"
+    "sass": "sass --watch sass/main.scss:css/main.css",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browerslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/melan04/MelanyConde_3_25122020/issues"
   },

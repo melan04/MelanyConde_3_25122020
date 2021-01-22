@@ -1,6 +1,18 @@
 @import "./base.scss";
 @import "./homepage.scss";
 
+@media only screen and (min-width: 900px) {
+    .blocboxmenu {
+        display:flex;
+        margin-bottom: 50px;
+    
+    .boxmenu {
+        min-width: 30%;
+        margin: 10px;
+        justify-content: space-between;
+    }}
+}
+
 
 header a {
     position: relative;
@@ -16,6 +28,8 @@ header a {
 
 .imgmenu {
     width: 100%;
+    height: 250Px;
+    object-fit: cover;
 }
 
 .menu {
@@ -40,12 +54,10 @@ header a {
         }
         
         .heart { 
-        &__vide {
+        &__vide, &__plein {
             top : -20px;
-            right: 30px;}
-        &__plein { 
-           top : -20px;
-           right: 30px;}}
+            right: 10px;}
+        }
     }
 
 .boxmenu {
@@ -70,7 +82,7 @@ header a {
     transform-origin: top;
     animation: jump 2000ms 300ms;
     overflow: hidden;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     
     
@@ -124,10 +136,11 @@ header a {
     }
 }  
 
- &:hover {
+ &:hover, &:active {
         border-radius: 10px 0px 0px 10px;
         overflow: visible;
         margin-right : 20%;
+        animation-fill-mode: forwards;
 
         .fas.fa-check-circle {
             animation : rotate 0.5s;
