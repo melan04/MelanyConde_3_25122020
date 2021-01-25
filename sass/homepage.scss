@@ -1,5 +1,6 @@
 @import "./base.scss";
 
+/* MEDIA QUERIES */
 
 @media only screen and (min-width: 600px) {
 
@@ -13,22 +14,24 @@
         justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
-    .box {
-    min-width: 20%;
- }  
-}}
+    
+        .box {
+        min-width: 20%;}}
+   
+}
 
 .restaurantscards {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-}
 
 .card {
-    max-width: 45%;
+    width: 45%;}
 }
 } 
+
+/*MOBILE FIRT*/
 
 .local {
         height: auto;
@@ -72,11 +75,10 @@
         padding: 20px;
         margin: 20px 0px 0px 10px;
         font-weight:bolder;
-        font-size: rem;
         @include box-shadow;
    
         &__icon {
-        margin: 0px 20px 0px 0px;
+        margin: 0px 20px 0px 10px;
         }
 
         &__number {
