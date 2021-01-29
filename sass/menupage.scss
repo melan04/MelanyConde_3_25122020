@@ -53,7 +53,7 @@ header a {
         align-items: center;
         padding: 30px 10px 30px 0px;}
         
-        p {
+        h1 {
             @include logo;
             padding: 0px;   
         }
@@ -66,15 +66,18 @@ header a {
     }
 
 .boxmenu {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 40px 0px;
 
-    &__title::after {
+    &__title {
+    margin-bottom: 0px;
+
+    ::after {
         content: "";
         margin: 5px 0px 15px 0px;
         display: block;
         width : 40px;
         height: 3px;
-        background-color: $color-tertiary; }
+        background-color: $color-tertiary; } }
 }
 
 .foodbox {

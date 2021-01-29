@@ -486,7 +486,7 @@ body h1, html h1 {
   font-size: 1.4em;
 }
 body h2, html h2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin: 0px 0px 25px 0px;
 }
 body p, html p {
@@ -683,7 +683,7 @@ body h1, html h1 {
   font-size: 1.4em;
 }
 body h2, html h2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin: 0px 0px 25px 0px;
 }
 body p, html p {
@@ -765,7 +765,7 @@ footer ul {
     width: 45%;
   }
 }
-/*MOBILE FIRT*/
+/*MOBILE FIRST*/
 .local {
   height: auto;
   margin-top: 5px;
@@ -1027,7 +1027,7 @@ body h1, html h1 {
   font-size: 1.4em;
 }
 body h2, html h2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin: 0px 0px 25px 0px;
 }
 body p, html p {
@@ -1224,7 +1224,7 @@ body h1, html h1 {
   font-size: 1.4em;
 }
 body h2, html h2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin: 0px 0px 25px 0px;
 }
 body p, html p {
@@ -1306,7 +1306,7 @@ footer ul {
     width: 45%;
   }
 }
-/*MOBILE FIRT*/
+/*MOBILE FIRST*/
 .local {
   height: auto;
   margin-top: 5px;
@@ -1473,7 +1473,7 @@ header a i {
   align-items: center;
   padding: 30px 10px 30px 0px;
 }
-.menu p {
+.menu h1 {
   font-family: "Shrikhand", "cursive";
   font-size: 1.5rem;
   padding: 15px;
@@ -1485,9 +1485,12 @@ header a i {
 }
 
 .boxmenu {
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 40px 0px;
 }
-.boxmenu__title::after {
+.boxmenu__title {
+  margin-bottom: 0px;
+}
+.boxmenu__title ::after {
   content: "";
   margin: 5px 0px 15px 0px;
   display: block;
