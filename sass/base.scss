@@ -119,7 +119,7 @@ $breakpoints: (
    top : -40px;
    right: 30px;
    color : transparent;
-   &:active {
+   &:hover {
    animation: heart__color 2000ms both; 
 } }
 }
