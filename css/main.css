@@ -412,7 +412,7 @@ template {
   right: 30px;
   color: transparent;
 }
-.heart__plein:active {
+.heart__plein:hover {
   animation: heart__color 2000ms both;
 }
 
@@ -609,7 +609,7 @@ footer ul {
   right: 30px;
   color: transparent;
 }
-.heart__plein:active {
+.heart__plein:hover {
   animation: heart__color 2000ms both;
 }
 
@@ -953,7 +953,7 @@ footer ul {
   right: 30px;
   color: transparent;
 }
-.heart__plein:active {
+.heart__plein:hover {
   animation: heart__color 2000ms both;
 }
 
@@ -1150,7 +1150,7 @@ footer ul {
   right: 30px;
   color: transparent;
 }
-.heart__plein:active {
+.heart__plein:hover {
   animation: heart__color 2000ms both;
 }
 
